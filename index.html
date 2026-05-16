@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Mozilla+Text:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Irina Tassinari</title>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="logo" href="#top">Irina Tassinari</a>
+            <div class="nav-actions">
+                <div class="language-switcher" aria-label="Language switcher">
+                    <button class="language-button is-active" type="button" data-lang="en">EN</button>
+                    <button class="language-button" type="button" data-lang="de">DE</button>
+                </div>
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Tech Stack</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#education" data-i18n="nav.education">Education</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero section">
+            <div class="hero-content">
+                <p class="eyebrow" data-i18n="hero.role">Full-Stack Developer</p>
+                <h1>Irina Tassinari</h1>
+                <p class="hero-text" data-i18n="hero.text">
+                    I build responsive full-stack web applications with React, TypeScript,
+                    JavaScript, Node.js, REST APIs, and cloud deployment on AWS.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#experience" data-i18n="hero.experienceCta">View Experience</a>
+                    <a class="button secondary" href="#contact" data-i18n="hero.contactCta">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-side">
+                <figure class="profile-photo">
+                    <img src="./assets/profile-photo.jpg" alt="Portrait of Irina Tassinari">
+                </figure>
+                <aside class="contact-card" aria-label="Contact details">
+                    <p>Berlin, Germany</p>
+                    <a href="tel:+4915773717582">+4915773717582</a>
+                    <a href="mailto:irinatassinari@gmail.com">irinatassinari@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/irina-tassinari-86ba63378/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="https://github.com/IrinaTassinari" target="_blank" rel="noreferrer">GitHub</a>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="about.eyebrow">Summary</p>
+                <h2 data-i18n="about.title">Focused on modern web applications</h2>
+            </div>
+            <p class="summary" data-i18n="about.text">
+                Full-Stack Developer with focus on React, TypeScript, JavaScript, and Node.js.
+                Experienced in building full-stack web applications with authentication, REST APIs,
+                and cloud deployment. Strong interest in AI-powered development and modern web
+                technologies.
+            </p>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="skills.eyebrow">Tech Stack</p>
+                <h2 data-i18n="skills.title">Tools I work with</h2>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-group">
+                    <h3>Frontend</h3>
+                    <p>React, TypeScript, JavaScript, Tailwind CSS, HTML, SCSS/Sass</p>
+                </article>
+                <article class="skill-group">
+                    <h3>Backend</h3>
+                    <p>Node.js, Express.js, REST APIs</p>
+                </article>
+                <article class="skill-group">
+                    <h3>Databases</h3>
+                    <p>MySQL, MongoDB</p>
+                </article>
+                <article class="skill-group">
+                    <h3>Cloud & DevOps</h3>
+                    <p>AWS EC2, RDS, Amplify, Docker, Nginx</p>
+                </article>
+                <article class="skill-group">
+                    <h3>Tools</h3>
+                    <p>Git, GitHub, Postman, Figma, DBeaver</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="projects.eyebrow">Projects</p>
+                <h2 data-i18n="projects.title">Selected work</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card featured-project">
+                    <div class="project-topline">
+                        <p class="project-type" data-i18n="project1.type">Full-Stack Application</p>
+                        <div class="project-links">
+                            <a href="https://github.com/IrinaTassinari/question-randomizer-fullstack" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="https://main.dh6pcwu1dbgpd.amplifyapp.com/" target="_blank" rel="noreferrer">Live</a>
+                        </div>
+                    </div>
+                    <h3>Biology Question Randomizer</h3>
+                    <ul>
+                        <li data-i18n="project1.b1">Built full-stack application with role-based authentication for students and teachers.</li>
+                        <li data-i18n="project1.b2">Implemented protected API routes and secure JWT authentication.</li>
+                        <li data-i18n="project1.b3">Developed question generation, user profiles, and content management features.</li>
+                        <li data-i18n="project1.b4">Deployed scalable infrastructure using AWS EC2, RDS, and Amplify.</li>
+                    </ul>
+                    <p class="tech-list">React, TypeScript, Node.js, Express, MySQL, AWS</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-topline">
+                        <p class="project-type" data-i18n="project5.type">Frontend Landing Page</p>
+                        <div class="project-links">
+                            <a href="https://github.com/IrinaTassinari/dtz-landing" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="https://dtz-landing.vercel.app/de" target="_blank" rel="noreferrer">Live</a>
+                        </div>
+                    </div>
+                    <h3>DTZ Landing</h3>
+                    <ul>
+                        <li data-i18n="project5.b1">Built a multilingual landing page for DTZ exam preparation using Next.js App Router.</li>
+                        <li data-i18n="project5.b2">Implemented language-based routing with JSON locales for DE, EN, RU, and AR content.</li>
+                        <li data-i18n="project5.b3">Developed responsive UI components, including language and theme switchers.</li>
+                        <li data-i18n="project5.b4">Used next/font for optimized font loading and deployed the project on Vercel.</li>
+                    </ul>
+                    <p class="tech-list">Next.js 16, React 19, TypeScript 5, Tailwind CSS 4, App Router, JSON locales, Vercel</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-topline">
+                        <p class="project-type" data-i18n="project4.type">Frontend Project</p>
+                        <div class="project-links">
+                            <a href="https://github.com/IrinaTassinari/Confidently_landing" target="_blank" rel="noreferrer">GitHub</a>
+                            <span data-i18n="project4.liveSoon">Live soon</span>
+                        </div>
+                    </div>
+                    <h3>German Exam Preparation Platform</h3>
+                    <ul>
+                        <li data-i18n="project4.b1">Built responsive and interactive user interfaces using HTML, CSS, and JavaScript.</li>
+                        <li data-i18n="project4.b2">Improved website navigation and user experience.</li>
+                        <li data-i18n="project4.b3">Optimized layouts for responsiveness and cross-browser compatibility.</li>
+                    </ul>
+                    <p class="tech-list">HTML, CSS, JavaScript</p>
+                </article>
+
+                <article class="project-card featured-project">
+                    <div class="project-topline">
+                        <p class="project-type" data-i18n="project2.type">Full-Stack E-commerce Application</p>
+                        <div class="project-links">
+                            <a href="https://github.com/IrinaTassinari/ONLINE_PET_SHOP" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="https://online-pet-shop01.vercel.app/" target="_blank" rel="noreferrer">Live</a>
+                        </div>
+                    </div>
+                    <h3>Online Pet Shop</h3>
+                    <ul>
+                        <li data-i18n="project2.b1">Developed full-stack e-commerce platform with product catalog and cart functionality.</li>
+                        <li data-i18n="project2.b2">Built REST API and implemented data persistence.</li>
+                        <li data-i18n="project2.b3">Designed responsive UI and ensured cross-browser compatibility.</li>
+                    </ul>
+                    <p class="tech-list">React, Node.js, Express, SQLite</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-topline">
+                        <p class="project-type" data-i18n="project6.type">Frontend Project</p>
+                        <div class="project-links">
+                            <a href="https://github.com/IrinaTassinari/Project" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="https://meetupclone-21kwgnqir-irinas-projects-44afd5ab.vercel.app/" target="_blank" rel="noreferrer">Live</a>
+                        </div>
+                    </div>
+                    <h3>Meetup Clone</h3>
+                    <ul>
+                        <li data-i18n="project6.b1">Built a Meetup-inspired static frontend with a landing page and a separate events page.</li>
+                        <li data-i18n="project6.b2">Implemented event search and client-side filtering by type, distance, and category in vanilla JavaScript.</li>
+                        <li data-i18n="project6.b3">Added dark/light theme switching with localStorage persistence.</li>
+                        <li data-i18n="project6.b4">Created responsive layouts, animated sections, an online events slider, and an embedded Google Map.</li>
+                    </ul>
+                    <p class="tech-list">HTML5, CSS3, JavaScript, Animate.css, WOW.js, Google Fonts, Google Maps Embed, Vercel</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-topline">
+                        <p class="project-type" data-i18n="project3.type">Frontend Project</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Antonshk2013/CreditUnion_LoanCore" target="_blank" rel="noreferrer">GitHub</a>
+                            <span data-i18n="project3.private">Private repository</span>
+                        </div>
+                    </div>
+                    <h3>Bank Lending Platform</h3>
+                    <ul>
+                        <li data-i18n="project3.b1">Repository access is private; code can be shared or demonstrated on request.</li>
+                        <li data-i18n="project3.b2">Developed responsive user interfaces based on design requirements.</li>
+                        <li data-i18n="project3.b3">Implemented core frontend features and improved user experience.</li>
+                        <li data-i18n="project3.b4">Collaborated with backend developers to integrate APIs.</li>
+                    </ul>
+                    <p class="tech-list">HTML, CSS, JavaScript</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="experience.eyebrow">Experience</p>
+                <h2 data-i18n="experience.title">Recent work</h2>
+            </div>
+            <div class="timeline">
+                <article class="experience-item">
+                    <div>
+                        <p class="date">Apr 2026 - Present</p>
+                        <h3 data-i18n="experience1.role">Junior Frontend Developer Intern</h3>
+                        <p class="company" data-i18n="experience1.company">Confidently Project, German exam preparation platform</p>
+                    </div>
+                    <ul>
+                        <li data-i18n="experience1.b1">Developed responsive UI components using HTML, CSS, and JavaScript.</li>
+                        <li data-i18n="experience1.b2">Improved user flows and website navigation.</li>
+                        <li data-i18n="experience1.b3">Integrated dynamic content and interactive features.</li>
+                        <li data-i18n="experience1.b4">Optimized layouts for responsiveness and cross-browser compatibility.</li>
+                        <li data-i18n="experience1.b5">Collaborated with team members using Git workflows.</li>
+                    </ul>
+                </article>
+
+                <article class="experience-item">
+                    <div>
+                        <p class="date">Dec 2025 - Mar 2026</p>
+                        <h3 data-i18n="experience2.role">Junior Frontend Developer Intern</h3>
+                        <p class="company">Aton Shkarupa IT Services, Fintech / BNPL solutions</p>
+                    </div>
+                    <ul>
+                        <li data-i18n="experience2.b1">Contributed to transitioning the product from MVP to production-ready application.</li>
+                        <li data-i18n="experience2.b2">Developed responsive UI components and layouts from scratch.</li>
+                        <li data-i18n="experience2.b3">Integrated frontend with REST APIs.</li>
+                        <li data-i18n="experience2.b4">Improved usability, cross-browser compatibility, and basic performance.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="education.eyebrow">Education</p>
+                <h2 data-i18n="education.title">Learning path</h2>
+            </div>
+            <div class="info-grid">
+                <article class="info-card">
+                    <p class="date">Apr 2026 - Present</p>
+                    <h3>KIRON, THRIVE Program</h3>
+                    <p data-i18n="education1.text">AI / Machine Learning, Berlin</p>
+                </article>
+                <article class="info-card">
+                    <p class="date">Jul 2025 - Jun 2026</p>
+                    <h3>ITCareerHub</h3>
+                    <p data-i18n="education2.text">Full-Stack Web Development Weiterbildung, Berlin</p>
+                </article>
+                <article class="info-card">
+                    <p class="date">2015 - 2021</p>
+                    <h3>Kazan State Academy of Veterinary Medicine</h3>
+                    <p data-i18n="education3.text">Degree in Veterinary Medicine</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="extra.eyebrow">Certifications & Languages</p>
+                <h2 data-i18n="extra.title">Additional background</h2>
+            </div>
+            <div class="split-grid">
+                <article class="info-card">
+                    <h3 data-i18n="extra.certifications">Certifications</h3>
+                    <div class="stacked-links">
+                        <a href="https://coursera.org/share/c15109107087bec7d9acd13237f7fb98" target="_blank" rel="noreferrer">Google AI Essentials</a>
+                        <a href="https://coursera.org/share/cbf84604fd5b90426aa3acd7760174e9" target="_blank" rel="noreferrer">Google Prompting Essentials</a>
+                        <a href="https://coursera.org/share/ae13f1e2e98704679bd5fab9c8980c0f" target="_blank" rel="noreferrer" data-i18n="extra.python">Python course</a>
+                    </div>
+                </article>
+                <article class="info-card">
+                    <h3 data-i18n="extra.languages">Languages</h3>
+                    <div class="language-list">
+                        <span data-i18n="extra.english">English - B2</span>
+                        <span data-i18n="extra.german">German - B1</span>
+                        <span data-i18n="extra.italian">Italian - B1</span>
+                        <span data-i18n="extra.russian">Russian - Native</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+                <h2 data-i18n="contact.title">Let's build something useful</h2>
+            </div>
+            <div class="contact-links">
+                    <a href="mailto:irinatassinari@gmail.com">irinatassinari@gmail.com</a>
+                    <a href="tel:+4915773717582">+4915773717582</a>
+                    <a href="https://www.linkedin.com/in/irina-tassinari-86ba63378/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="https://github.com/IrinaTassinari" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Irina Tassinari. <span data-i18n="footer.role">Full-Stack Developer.</span></p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
