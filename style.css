@@ -512,6 +512,17 @@ h3 {
         gap: 32px;
     }
 
+    .profile-photo,
+    .profile-photo img {
+        min-height: 360px;
+    }
+
+    .profile-photo img {
+        width: calc(100% + 44px);
+        max-width: none;
+        transform: translateX(-22px);
+    }
+
     .skills-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
