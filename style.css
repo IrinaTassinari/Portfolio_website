@@ -518,9 +518,9 @@ h3 {
     }
 
     .profile-photo img {
-        width: calc(100% + 44px);
+        width: calc(100% + 28px);
         max-width: none;
-        transform: translateX(-22px);
+        transform: translateX(-8px);
     }
 
     .skills-grid {
