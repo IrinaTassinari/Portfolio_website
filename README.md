@@ -2,6 +2,10 @@
 
 Personal portfolio website for Irina Tassinari, Full-Stack Developer.
 
+## Live
+
+Vercel: https://portfolio-website-rust-three-33.vercel.app/
+
 ## Stack
 
 - HTML
